@@ -1,7 +1,8 @@
-import { ls, up, cd } from "../../utils/index.js";
+import { ls, up, cd, os } from "../utils/index.js";
 import { EOL } from "os";
 
 export const commandsRouter = async (command) => {
+  const arg = command.slice(3);
   try {
     switch (true) {
       case command === "ls":
@@ -11,7 +12,9 @@ export const commandsRouter = async (command) => {
         up();
         break;
       case command.startsWith("cd"):
-        await cd(command.slice(3));
+        break;
+      case command.startsWith("os"):
+        os(arg);
         break;
       default:
         console.log("Invalid input");
