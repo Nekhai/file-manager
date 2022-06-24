@@ -1,0 +1,13 @@
+export { ls } from "../commands/nwd/ls.js";
+export { up } from "../commands/nwd/up.js";
+export { cd } from "../commands/nwd/cd.js";
+export { os } from "../commands/os/os.js";
+export { cat } from "../commands/fs/cat.js";
+export { add } from "../commands/fs/add.js";
+export { rn } from "../commands/fs/rn.js";
+export { del } from "../commands/fs/rm.js";
+export { cp } from "../commands/fs/cp.js";
+export { mv } from "../commands/fs/mv.js";
+export { hash } from "../commands/hash/hash.js";
+export { compress } from "../commands/zip/compress.js";
+export { decompress } from "../commands/zip/decompress.js";
